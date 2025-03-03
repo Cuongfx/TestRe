@@ -30,15 +30,9 @@ def load_graph_from_json(json_path):
 # #################################
 
 def node_match(n1_attrs, n2_attrs):
-    """
-    Example: match on 'type' exactly, ignoring other attributes.
-    """
     return n1_attrs.get('type') == n2_attrs.get('type')
 
 def edge_match(e1_attrs, e2_attrs):
-    """
-    Example: require 'angular_type' to match exactly.
-    """
     return e1_attrs.get('angular_type') == e2_attrs.get('angular_type')
 
 
